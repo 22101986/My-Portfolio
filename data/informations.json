@@ -1,0 +1,15 @@
+{
+    "nickname": "Alien",
+    "age": 35,
+    "adress": "26, résidence le Catelier",
+    "postal_code": "76680 Saint Saëns",
+    "passions": {
+        "sport": "basket-ball",
+        "culture": "musique",
+        "nature": "animaux",
+        "art": "street-art",
+        "other": "voyages"
+    }
+  
+    
+}
