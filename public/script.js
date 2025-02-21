@@ -1,15 +1,16 @@
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Empêche la soumission par défaut du formulaire
-
-    // Récupère les données du formulaire
+    event.preventDefault()
+    
+    const send = document.getElementById("send")
     const formData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
-    };
+    }
 
-    // Envoie les données au serveur
+    let isOK = false
+
     fetch('/send-email', {
         method: 'POST',
         headers: {
@@ -20,12 +21,17 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            alert('Message envoyé avec succès!');
+            isOK = true
+            document.getElementById('contact-form').reset()
+            send.style.display = isOK ? "block" : "none"
+            isOK = false
+
+
         } else {
-            alert('Erreur lors de l\'envoi du message.');
+            alert('Erreur lors de l\'envoi du message.')
         }
     })
     .catch(error => {
-        console.error('Erreur:', error);
-    });
-});
+        console.error('Erreur:', error)
+    })
+})

@@ -1,30 +1,30 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-const path = require('path');
+const express = require('express')
+const nodemailer = require('nodemailer')
+const bodyParser = require('body-parser')
+const path = require('path')
 
-const app = express();
-app.use(bodyParser.json());
+const app = express()
+app.use(bodyParser.json())
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+})
 
 app.get('/script.js', (req, res) => {
     res.type('text/css');
-    res.sendFile(path.join(__dirname, 'public', 'script.js'));
-});
+    res.sendFile(path.join(__dirname, 'public', 'script.js'))
+})
 
 app.get('/styles.css', (req, res) => {
-    res.type('text/css');
-    res.sendFile(path.join(__dirname, 'public', 'styles.css'));
-});
+    res.type('text/css')
+    res.sendFile(path.join(__dirname, 'public', 'styles.css'))
+})
 
 app.get('/images', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'images'));
-});
+})
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -32,7 +32,7 @@ const transporter = nodemailer.createTransport({
         user: 'h.pierrache@gmail.com',
         pass: 'injg cgzx jrfu smuf'
     }
-});
+})
 
 app.post('/send-email', (req, res) => {
     const { name, email, message } = req.body;
@@ -42,7 +42,7 @@ app.post('/send-email', (req, res) => {
         to: 'h.pierrache@gmail.com',
         subject: `Nouveau message de ${name}. Mail: ${email} `,
         text: message
-    };
+    }
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
@@ -52,10 +52,10 @@ app.post('/send-email', (req, res) => {
             console.log('Email envoyé: ' + info.response);
             res.json({ success: true });
         }
-    });
-});
+    })
+})
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Serveur en écoute sur le port ${PORT}`);
-});
+})

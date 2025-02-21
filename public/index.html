@@ -29,7 +29,7 @@
     <section id="about" class="section">
         <div class="container">
             <h2>À propos de moi</h2>
-            <p> BLABLABLA</p>
+            <p>je veux alterner</p>
         </div>
     </section>
 
@@ -109,13 +109,13 @@
             </div>
             <h3 style="text-align: center;">M'envoyer un message</h3>
             <form id="contact-form">
-                <label for="name">Nom</label>
+                <label for="name" id="userName" >Nom</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
+                <label for="email" id="userEmail">Email</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Message</label>
+                <label for="message" id="userMessage">Message</label>
                 <textarea id="message" name="message" required></textarea>
 
                 <button type="submit" class="btn">Envoyer</button>
@@ -125,7 +125,12 @@
         
     </section>
 
-
+    <div class="style" id="send">
+        <h3>Message envoyé avec succès</h3>
+        <button class="btn">
+            <a href="index.html" style="text-decoration: none; color: white;">Back to Home</a>
+        </button>
+    </div>
 
     <footer>
         <div class="container">
