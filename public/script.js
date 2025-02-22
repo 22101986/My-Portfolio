@@ -21,12 +21,11 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            isOK = true
-            document.getElementById('contact-form').reset()
-            send.style.display = isOK ? "block" : "none"
-            isOK = false
-
-
+                isOK = true
+                document.getElementById('contact-form').reset()
+                send.style.display = isOK ? "block" : "none"
+                isOK = false
+                setInterval(() => {send.style.display = isOK ? "block" : "none"}, 3000)
         } else {
             alert('Erreur lors de l\'envoi du message.')
         }
