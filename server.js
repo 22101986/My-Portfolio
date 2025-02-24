@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/script.js', (req, res) => {
-    res.type('text/css');
     res.sendFile(path.join(__dirname, 'public', 'script.js'))
 })
 

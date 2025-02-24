@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
+            <img src="/images/picture.png" alt="Logo" class="logo">
             <h1>Harold PIERRACHE</h1>
             <h2 style="margin-top: 10px;">Développeur concépteur d'application en formation (Zone01 Normandie)</h2>
             <nav style="margin-top: 10px;">
@@ -27,30 +27,31 @@
     </header>
 
     <section id="about" class="section">
-        <div class="container">
+        <div class="container back">
             <h2>À propos de moi</h2>
-            <p>Après plus de dix années enrichissantes à accompagner des personnes atteintes d'autisme, j'ai choisi de donner un nouveau tournant à ma carrière en suivant ma passion pour la programmation. En 2022, j'ai obtenu le titre professionnel de Développeur Web/Web Mobile, marquant le début d'une aventure dans un domaine qui m'inspire profondément.
+            <h4>Après plus de dix années enrichissantes à accompagner des personnes atteintes d'autisme, j'ai choisi de donner un nouveau tournant à ma carrière en suivant ma passion pour la programmation. En 2022, j'ai obtenu le titre professionnel de Développeur Web/Web Mobile, marquant le début d'une aventure dans un domaine qui m'inspire profondément.
 
-                Curieux de nature et avide d'apprendre, je considère le développement web comme un terrain de jeu infini où chaque projet est une opportunité de relever de nouveaux défis. Que ce soit en front-end ou en back-end, j'aime explorer, comprendre et créer des solutions qui allient technicité et expérience utilisateur.
+                Curieux de nature et avide d'apprendre, je considère le développement comme un terrain de jeu infini où chaque projet est une opportunité de relever de nouveaux défis. Que ce soit en front-end ou en back-end, j'aime explorer, comprendre et créer des solutions qui allient technicité et expérience utilisateur.
                 
-                Le travail en équipe est pour moi essentiel : partager des idées, collaborer et évoluer ensemble sont des valeurs qui me tiennent à cœur. Aujourd’hui, je suis à la recherche d'un poste en alternance(contrat de professionnalisation) qui me permettrait de participer à des projets stimulants où je pourrai continuer à apprendre, relever des challenges et contribuer à des solutions innovantes.</p>
-        </div>
-        <div class="container skills-list">
-            <a style="display: flex;align-items: center; flex-direction: row;" href="https://github.com/22101986" class="btn">Github
-                <p style="opacity: 0;">js</p>
-                <img src="/images/github.png" style="height: 30px;width: 30px;" alt="">
-            </a>
-        </div>
-        <div class="container skills-list">
-            <a style="display: flex;align-items: center; flex-direction: row;"  href="https://www.linkedin.com/in/harold-pierrache-b17aba21b/" class="btn">Linkedin
-                <p style="opacity: 0;">C</p>
-                <img src="/images/linkedin.png" style="height: 30px;width: 30px;" alt="">
-            </a>
-        </div>
+                Le travail en équipe est pour moi essentiel : partager des idées, collaborer et évoluer ensemble sont des valeurs qui me tiennent à cœur. Aujourd’hui, je suis à la recherche d'un poste en alternance(contrat de professionnalisation) qui me permettrait de participer à des projets stimulants où je pourrai continuer à apprendre, relever des challenges et contribuer à des solutions innovantes.</h4>
+                <div class="container skills-list">
+                    <a style="display: flex;align-items: center; flex-direction: row;" href="https://github.com/22101986" class="btn">Github
+                        <p style="opacity: 0;">js</p>
+                        <img src="/images/github.png" style="height: 30px;width: 30px;" alt="">
+                    </a>
+                </div>
+                <div class="container skills-list">
+                    <a style="display: flex;align-items: center; flex-direction: row;"  href="https://www.linkedin.com/in/harold-pierrache-b17aba21b/" class="btn">Linkedin
+                        <p style="opacity: 0;">C</p>
+                        <img src="/images/linkedin.png" style="height: 30px;width: 30px;" alt="">
+                    </a>
+                </div>
+            </div>
+        
     </section>
 
     <section id="projects" class="section">
-        <div class="container">
+        <div class="container back">
             <h2>Mes Projets</h2>
             <div class="projects-grid">
                 <div class="project">
@@ -75,7 +76,7 @@
     </section>
 
     <section id="skills" class="section">
-        <div class="container">
+        <div class="container back">
             <h2>Technologies: </h2>
             <ul class="skills-list">
                 <li><img src="/images/php.png" alt=""></li>
@@ -91,8 +92,6 @@
                 <li><img src="/images/html-5.png" alt=""></li>
                 <li><img src="/images/css-3.png" alt=""></li>
             </ul>
-        </div>
-        <div class="container">
             <h2>En cours d'apprentissage: </h2>
             <ul class="skills-list">
                 <li><img src="/images/laravel.png" alt=""></li>
@@ -109,19 +108,19 @@
     
 
     <section id="contact" class="section">
-        <div class="container">
+        <div class="container back">
             <h2>Contact</h2>
             
             <h3 style="text-align: center;">M'envoyer un message</h3>
             <form id="contact-form">
-                <label for="name" id="userName" >Nom</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name" id="userName" ></label>
+                <input type="text" id="name" name="name" placeholder="Nom" required>
 
-                <label for="email" id="userEmail">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email" id="userEmail"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
 
-                <label for="message" id="userMessage">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="message" id="userMessage"></label>
+                <textarea id="message" name="message" placeholder="message"></textarea>
 
                 <button type="submit" class="btn">Envoyer</button>
             </form>
