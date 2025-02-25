@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+
 const express = require('express')
 const nodemailer = require('nodemailer')
 const bodyParser = require('body-parser')
@@ -28,10 +31,11 @@ app.get('/images', (req, res) => {
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'h.pierrache@gmail.com',
-        pass: 'injg cgzx jrfu smuf'
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
     }
-})
+});
+
 
 app.post('/send-email', (req, res) => {
     const { name, email, message } = req.body;
