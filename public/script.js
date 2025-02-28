@@ -45,4 +45,4 @@ document.getElementById('view').addEventListener('click', () => {
     send.style.display = "none"
     
     project.style.display = "block"
-});
+})
