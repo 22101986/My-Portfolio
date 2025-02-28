@@ -122,8 +122,9 @@ nav ul li a:hover {
 }
 
 .section h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-family: "Encode Sans Semi Condensed", serif;
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
     margin-bottom: 50px;
     font-size: 2.5rem;
@@ -138,7 +139,7 @@ nav ul li a:hover {
 }
 
 .project {
-    background-color: rgba(250, 248, 248, 0.8);
+    background-color: rgba(250, 248, 248, 0.5);
     color: #34495e;
     padding: 25px;
     border-radius: 10px;
@@ -183,7 +184,7 @@ nav ul li a:hover {
 }
 
 .skills-list li {
-    background-color: rgba(64, 64, 65, 0.8);
+    background-color: rgba(64, 64, 65, 0.6);
     color: #fff;
     padding: 15px 25px;
     border-radius: 5px;
