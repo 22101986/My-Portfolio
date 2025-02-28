@@ -1,15 +1,15 @@
+let isOK = false
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault()
+    event.preventDefault();
     
     const send = document.getElementById("send")
+
     const formData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
     }
-
-    let isOK = false
 
     fetch('/send-email', {
         method: 'POST',
@@ -21,11 +21,14 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-                isOK = true
-                document.getElementById('contact-form').reset()
-                send.style.display = isOK ? "block" : "none"
+            isOK = true
+            document.getElementById('contact-form').reset()
+            send.style.display = isOK ? "block" : "none"
+            
+            setTimeout(() => {
+                send.style.display = "none"
                 isOK = false
-                setInterval(() => {send.style.display = isOK ? "block" : "none"}, 3000)
+            }, 3000)
         } else {
             alert('Erreur lors de l\'envoi du message.')
         }
@@ -34,3 +37,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         console.error('Erreur:', error)
     })
 })
+
+document.getElementById('view').addEventListener('click', () => {
+    const project = document.getElementById("projectView")
+    const send = document.getElementById("send")
+    
+    send.style.display = "none"
+    
+    project.style.display = "block"
+});
