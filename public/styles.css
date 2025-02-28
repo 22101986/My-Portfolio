@@ -120,7 +120,7 @@ nav ul li a:hover {
     text-align: center;
     transition: transform 0.3s ease;
     width: 100%;
-    max-width: 200px;
+    max-width: 600px;
 }
 
 .project:hover {
