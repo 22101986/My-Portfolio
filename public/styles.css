@@ -6,10 +6,9 @@
 
 body {
     line-height: 1.6;
-    color: #333;
-    background-image: url("/images/background.jpg");
-    background-size: cover;
-    font-family: 'Inter', sans-serif;
+    color: #2c3e50;
+    background-image: url("/images/background2.jpg");
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -20,16 +19,17 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background-color: rgba(64, 64, 65, 0.8);
+    color: #ecf0f1;
     text-align: center;
-    padding: 40px 0;
-    border-bottom: 4px solid #00ff88;
+    padding: 50px 0;
+    border-bottom: 5px solid #3498db;
 }
 
 header h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-family: "Encode Sans Semi Condensed", serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 3rem;
     margin-bottom: 10px;
     animation: fadeIn 2s ease-in-out;
@@ -46,7 +46,7 @@ header h2 {
     width: 150px;
     margin-right: 20px;
     border-radius: 50%;
-    border: 4px solid #00ff88;
+    border: 4px solid #3498db;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -61,7 +61,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ecf0f1;
     text-decoration: none;
     font-weight: 600;
     padding: 10px 20px;
@@ -71,8 +71,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00ff88;
-    color: #000;
+    background-color: #3498db;
+    color: #fff;
     transform: translateY(-3px);
 }
 
@@ -115,19 +115,19 @@ nav ul li a:hover {
 }
 
 .back {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(250, 248, 248, 0.5);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: center;
     margin-bottom: 50px;
     font-size: 2.5rem;
-    color: #333;
+    color: #34495e;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -138,8 +138,8 @@ nav ul li a:hover {
 }
 
 .project {
-    background-color: #fff;
-    color: #333;
+    background-color: rgba(250, 248, 248, 0.8);
+    color: #34495e;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -155,14 +155,14 @@ nav ul li a:hover {
 .project h3 {
     margin-bottom: 15px;
     font-size: 1.5rem;
-    color: #00ff88;
+    color: #3498db;
 }
 
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: #00ff88;
-    color: #000;
+    background: #3498db;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.3s ease;
@@ -170,7 +170,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background: #00cc66;
+    background: #2980b9;
     transform: translateY(-3px);
 }
 
@@ -183,7 +183,7 @@ nav ul li a:hover {
 }
 
 .skills-list li {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(64, 64, 65, 0.8);
     color: #fff;
     padding: 15px 25px;
     border-radius: 5px;
@@ -215,7 +215,7 @@ form label {
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
-    color: #333;
+    color: #34495e;
 }
 
 form input, form textarea {
@@ -229,14 +229,14 @@ form input, form textarea {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #00ff88;
+    border-color: #3498db;
     outline: none;
 }
 
 form button {
     padding: 12px 24px;
-    background: #00ff88;
-    color: #000;
+    background: #3498db;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -245,17 +245,17 @@ form button {
 }
 
 form button:hover {
-    background: #00cc66;
+    background: #2980b9;
     transform: translateY(-3px);
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background-color: rgba(65, 64, 64, 0.8);
+    color: #ecf0f1;
     text-align: center;
     padding: 30px 0;
     margin-top: 50px;
-    border-top: 4px solid #00ff88;
+    border-top: 5px solid #3498db;
 }
 
 .style {
@@ -264,13 +264,13 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(52, 73, 94, 0.9);
     padding: 30px;
-    border: 2px solid #00ff88;
+    border: 2px solid #3498db;
     border-radius: 12px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+    color: #ecf0f1;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     min-width: 300px;
     max-width: 90%;
