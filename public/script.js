@@ -154,7 +154,8 @@ function initTypingAnimation() {
         line.textContent = ''; // Vide le contenu initial
         
         // Pour la deuxième ligne, on attend que la première finisse
-        const delay = index * 3500;
+        const delay = index * 3000;
+        console.log(index)
         
         setTimeout(() => {
             if (index > 0) {
@@ -170,7 +171,7 @@ function initTypingAnimation() {
                     clearInterval(typingInterval);
                     line.style.borderRight = 'none'; // Enlève le curseur à la fin
                 }
-            }, 50); // Vitesse de typing
+            }, 100); // Vitesse de typing
         }, delay);
     });
 }
