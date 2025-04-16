@@ -151,15 +151,14 @@ function initTypingAnimation() {
     
     typingLines.forEach((line, index) => {
         const text = line.getAttribute('data-text');
-        line.textContent = ''; // Vide le contenu initial
+        line.textContent = '';
         
-        // Pour la deuxième ligne, on attend que la première finisse
         const delay = index * 3000;
         console.log(index)
         
         setTimeout(() => {
             if (index > 0) {
-                line.style.opacity = '1'; // Rend visible la deuxième ligne
+                line.style.opacity = '1'; 
             }
             
             let i = 0;
@@ -169,12 +168,11 @@ function initTypingAnimation() {
                     i++;
                 } else {
                     clearInterval(typingInterval);
-                    line.style.borderRight = 'none'; // Enlève le curseur à la fin
+                    line.style.borderRight = 'none';
                 }
-            }, 100); // Vitesse de typing
+            }, 100);
         }, delay);
     });
 }
 
-// Appeler cette fonction quand la page est chargée
 document.addEventListener('DOMContentLoaded', initTypingAnimation);
