@@ -3,186 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Harold Pierrache - Développeur Concepteur</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="cursor"></div>
+    
     <header>
-        <div class="container">
-            <img src="/images/picture.png" alt="Logo" class="logo">
-            <h1>Harold PIERRACHE</h1>
-            <h2 style="margin-top: 10px;">Développeur concépteur d'application en formation (Zone01 Normandie)</h2>
-            <nav style="margin-top: 10px;">
+        <div class="navbar">
+            <div class="logo">
+                <span>HP</span>
+            </div>
+            <nav>
                 <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-hover="À propos">À propos</a></li>
+                    <li><a href="#projects" data-hover="Projets">Projets</a></li>
+                    <li><a href="#skills" data-hover="Compétences">Compétences</a></li>
+                    <li><a href="#contact" data-hover="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="social-links">
+                <a href="https://github.com/22101986" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/harold-pierrache-b17aba21b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container back">
-            <h2>À propos de moi</h2>
-            <h3>Après plus de dix années enrichissantes à accompagner des personnes atteintes d'autisme, j'ai choisi de donner un nouveau tournant à ma carrière en suivant ma passion pour la programmation. En 2022, j'ai obtenu le titre professionnel de Développeur Web/Web Mobile, marquant le début d'une aventure dans un domaine qui m'inspire profondément.
-            <br>
-            <br>
-            
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line typing-line" data-text="Harold Pierrache">Harold Pierrache</span>
+                    <br>
+                    <span class="title-line typing-line" data-text="Développeur">Développeur</span>
+                    <br>
+                    <span class="title-line typing-line" data-text="Concepteur">Concepteur</span>
+                    <br>
+                    <span class="title-line typing-line" data-text="(en formation)">(en formation)</span>
 
-                Curieux de nature et avide d'apprendre, je considère le développement comme un terrain de jeu infini où chaque projet est une opportunité de relever de nouveaux défis. Que ce soit en front-end ou en back-end, j'aime explorer, comprendre et créer des solutions qui allient technicité et expérience utilisateur.
-            <br>
-            <br>
-               
-            Le travail en équipe est pour moi essentiel : partager des idées, collaborer et évoluer ensemble sont des valeurs qui me tiennent à cœur. Aujourd’hui, je suis à la recherche d'un poste en alternance(contrat de professionnalisation) qui me permettrait de participer à des projets stimulants où je pourrai continuer à apprendre, relever des challenges et contribuer à des solutions innovantes.</h3>
-            
-            <div class="container skills-list">
-                <a style="display: flex;align-items: center; flex-direction: row;"  href="https://www.linkedin.com/in/harold-pierrache-b17aba21b/" class="btn">Linkedin
-                    <p style="opacity: 0;">C</p>
-                    <img src="/images/linkedin.png" style="height: 30px;width: 30px;" alt="">
-                </a>
+                </h1>
+                <p class="hero-subtitle">Créateur de solutions numériques innovantes</p>
+                <a href="#projects" class="cta-button">Voir mes projets <i class="fas fa-arrow-down"></i></a>
             </div>
-        </div>
-        
-    </section>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="images/IMG-20250416-WA0000.jpg" alt="Harold Pierrache">
+                </div>
+            </div>
+        </section>
 
-    <section id="projects" class="section">
-        <div class="container back">
-            <h2>Mes Projets</h2>
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <h2>À propos</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Après plus de dix années enrichissantes à accompagner des personnes atteintes d'autisme, j'ai choisi de donner un nouveau tournant à ma carrière en suivant ma passion pour la programmation.</p>
+                    <p>En 2022, j'ai obtenu le titre professionnel de Développeur Web/Web Mobile, marquant le début d'une aventure dans un domaine qui m'inspire profondément.</p>
+                    <p>Curieux de nature et avide d'apprendre, je considère le développement comme un terrain de jeu infini où chaque projet est une opportunité de relever de nouveaux défis.</p>
+                    <div class="about-buttons">
+                        <a href="#contact" class="cta-button secondary">Me contacter</a>
+                        <a href="#" class="cta-button">Télécharger mon CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <h2>Mes Projets</h2>
+                <div class="section-divider"></div>
+            </div>
             <div class="projects-grid">
-               
-                <div class="project">
-                    <h3>Forum</h3>
-                    <img style="width: 75px;height: 75px;" src="/images/go.png" alt="">
-                    <p>Création d'un forum sécurisé en Go.</p>
-                    <br>
-                    <button class="btn" id="view">Voir le projet</button>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/forum.png" alt="Forum">
+                    </div>
+                    <div class="project-info">
+                        <h3>Forum</h3>
+                        <p>Création d'un forum sécurisé en Go.</p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>Backend</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="project">
-                    <h3>Mister-Quiz</h3>
-                    <img style="width: 75px;height: 75px;" src="/images/laravel.png" alt="">
-                    <p>Création d'un jeux type "c'est mon dernier mot..." en PHP/Laravel.</p>
-                    <button class="btn">Voir le projet</button>
-                </div>
-                <div class="project">
-                    <h3>Shop</h3>
-                    <img style="width: 75px;height: 75px;" src="/images/symfony.jpg" alt="">
-                    <p>Création d'un site de e-commerce en PHP/Symfony.</p>
-                    <button class="btn">Voir le projet</button>
-                </div>
-                <div class="project">
-                    <h3>Make-Game</h3>
-                    <img style="width: 75px;height: 75px;" src="/images/js.png" alt="">
-                    <p>Création d'un jeux type "Pac-Man" en JavaScript.</p>
-                    <button class="btn">Voir le projet</button>
-                </div>
-                <div class="project">
-                    <h3>Groupie-Tracker</h3>
-                    <img style="width: 75px;height: 75px;" src="/images/go.png" alt="">
-                    <p>Application permettant de récupérer des données sur des croupes de musique.</p>
-                    
-                    <button class="btn view">Voir le projet</button>
-                </div>
-                <div class="project">
-                    <h3>Mémory</h3>
-                    <img style="width: 75px;height: 75px;" src="/images/js.png" alt="">
-                    <p>Jeux de mémory inspiré de "South Park".</p>
-                    <br>
-                    <button class="btn">Voir le projet</button>
-                </div>
-                <!-- <div class="project">
-                    <h3>Memory</h3>
-                    <p></p>
-                    <a href="#" class="btn">Voir le projet</a>
-                    <a href="https://22101986.github.io/-valuation/" class="btn">Faire une partie</a>
-
-                </div> -->
-            </div>
-            <h4 style="text-align: center;margin-top: 15px;">Mes autre projets sont consultables sur mon Github.</h4>
-            <div class="container skills-list">
-                <a style="display: flex;align-items: center; flex-direction: row;" href="https://github.com/22101986" class="btn">Github
-                    <p style="opacity: 0;">js</p>
-                    <img src="/images/github.png" style="height: 30px;width: 30px;" alt="">
-                 </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container back">
-            <h2>Technologies: </h2>
-            <ul class="skills-list">
-                <li><img src="/images/php.png" alt=""></li>
-                <li><img src="/images/symfony.jpg" alt=""></li>
-                <li><img src="/images/js.png" alt=""></li>
-                <li><img src="/images/go.png" alt=""></li>
-                <li><img src="/images/serveur-sql.png" alt=""></li>
-                <li><img src="/images/sqlite.jpg" alt=""></li>
-                <li><img src="/images/mysql.png" alt=""></li>
-                <li><img src="/images/myadmin.png" alt=""></li>
-                <li><img src="/images/git.png" alt=""></li>
-                <li><img src="/images/github.png" alt=""></li>
-                <li><img src="/images/html-5.png" alt=""></li>
-                <li><img src="/images/css-3.png" alt=""></li>
-            </ul>
-            <h2>En cours d'apprentissage: </h2>
-            <ul class="skills-list">
-                <li><img src="/images/laravel.png" alt=""></li>
-                <li><img src="/images/node.png" alt=""></li>
-                <li><img src="/images/react.png" alt=""></li>
-                <li><img src="/images/rust.png" alt=""></li>
-                <li><img src="/images/c.png" alt=""></li>
-                <li><img src="/images/python.png" alt=""></li>
-                <li><img src="/images/java.png" alt=""></li>
                 
-            </ul>
-        </div>
-    </section>
-    
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/laravel.png" alt="Mister-Quiz">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mister-Quiz</h3>
+                        <p>Jeu type "C'est mon dernier mot..." en PHP/Laravel.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/symfony.jpg" alt="Shop">
+                    </div>
+                    <div class="project-info">
+                        <h3>Shop</h3>
+                        <p>Site e-commerce en PHP/Symfony.</p>
+                        <div class="project-tech">
+                            <span>Symfony</span>
+                            <span>PHP</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/js.png" alt="Make-Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Make-Game</h3>
+                        <p>Jeu type Pac-Man en JavaScript.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/22101986" target="_blank" class="cta-button secondary">Voir plus sur GitHub <i class="fab fa-github"></i></a>
+            </div>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container back">
-            <h2>Contact</h2>
-            
-            <h3 style="text-align: center; margin-bottom: 10px;">M'envoyer un message:</h3>
-            <form id="contact-form">
-                <label for="name" id="userName" ></label>
-                <input type="text" id="name" name="name" placeholder="Nom" required>
+        <section id="skills" class="section skills-section">
+            <div class="section-header">
+                <h2>Compétences</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Maîtrisées</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="images/php.png" alt="PHP">
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/symfony.jpg" alt="Symfony">
+                            <span>Symfony</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/js.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/go.png" alt="Go">
+                            <span>Go</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/mysql.png" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/sqlite.jpg" alt="MySQL">
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>En apprentissage</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="images/laravel.png" alt="Laravel">
+                            <span>Laravel</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/node.png" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/react.png" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/rust.png" alt="Rust">
+                            <span>Rust</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <label for="email" id="userEmail"></label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-
-                <label for="message" id="userMessage"></label>
-                <textarea id="message" name="message" placeholder="Message"></textarea>
-
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
-        </div>
-        <br>
-        
-    </section>
-
-    <div class="style" id="projectView">
-        <h3 style="margin: 30px;">Détails</h3>
-        <button class="btn"><a style="text-decoration: none;color: whitesmoke;" href="index.html">retour</a></button>
-
-    </div>
-
-    <div class="style" id="send">
-        <h3 style="margin: 30px;">Message envoyé avec succès</h3>
-    </div>
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Travaillons ensemble</h3>
+                    <p>Je suis actuellement à la recherche d'une opportunité en alternance (contrat de professionnalisation). Si mon profil vous intéresse, n'hésitez pas à me contacter.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>h.pierrache@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Normandie, France</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/22101986" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/harold-pierrache-b17aba21b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Pierrache Harold. Tous droits réservés.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>HP</span>
+            </div>
+            <div class="footer-links">
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#skills">Compétences</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Harold Pierrache. Tous droits réservés.</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
