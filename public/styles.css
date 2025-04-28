@@ -36,6 +36,7 @@ html {
 }
 
 body {
+    cursor: none;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--darker-color);
     color: var(--text-color);
