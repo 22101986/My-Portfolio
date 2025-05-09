@@ -866,9 +866,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .cursor {
-        display: none;
-    }
     .about-content,
     .contact-container {
         flex-direction: column;
@@ -896,8 +893,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .cursor {
-        display: none;
+    
+    .skill-item{
+        background-color: var(--primary-color);
+    }
+    .skill-item img{
+        filter: grayscale(0%) brightness(120%);
+
     }
     .menu-toggle {
         display: block;
@@ -953,6 +955,7 @@ footer {
 }
 
 @media (max-width: 576px) {
+    
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -973,6 +976,12 @@ footer {
     
     section {
         padding: 5rem 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .cursor {
+        display: none;
     }
 }
 
